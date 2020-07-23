@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "column_mappings" : { "NUM_TACHANA" : "M_TACHANA", "TILL_NUM" : "TILLNUM", "SALE_DATE" : "SALEDATE", 
+      "TIME_OPEN" : "TIMEOPEN", "POS_ID" : "POSID", "PRICE" : "PRICE", "QTY" : "QTY", "TOTAL" : "TOTAL",
+      "ITEM_CATEGORY" : "ITEMCATEGORY", "ID" : "ID"
+      },
+      "import_settings" : {
+        "import_columns" : [ "NUM_TACHANA", "TILL_NUM", "SALE_DATE", "TIME_OPEN", "POS_ID", "PRICE", "QTY", "TOTAL", "ITEM_CATEGORY", "ID"],
+        "include_filter" : [], "exclude_filter" : []
+      },
+      "source_data" : {
+        "data_type" : "CSV", "has_header" : true, "dialect"   : "HANA",
+        "file_name" : "Delek.db.data::delek00.csv"
+      },
+      "target_table" : "Delek.db.data::delek"  
+    }
+    ]
+}
